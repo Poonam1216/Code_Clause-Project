@@ -9,25 +9,102 @@
     <title>Portfolio Website </title>
 </head>
 <body>
-    <div id="header">
-        <ul>
-            <li><a href="#article">Article</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#home">Home</a></li>
-        </ul>
+    <div class="tab">
+
+            <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
+            <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
+            
+            <button class="tablinks" onclick="openPage(event, 'Article')">Article</button>
+            <button class="tablinks" onclick="openPage(event, 'Home')">Home</button>
+            
     </div>
     <div id="background_img">
         <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80" alt="unsplash" >
         <div class="center"><h1>Poonam Rani</h1> <h3>Full-Stack Developer</h3></div>
     </div>
+   
 
+    <div id="Home" class="tabcontent">
+        <h1>Home</h1>
+        <p>A motivated Engineer who is good at problem solving and Programming, with an emphasis on writing clean and maintainable code. Experienced with data structure, frontend/ backend and designing optimum solutions, aspiring to make a career in software engineering with a focus on full stack development.</p>
+        <h3>Experience</h3>
+        <ul>
+            <li>Working with Ministry of Tribal Affairs as a Procurement Executive from last 2 years</li>
+        </ul>
+        
+    </div>
 
+    <div id="Article" class="tabcontent">
+        <h1>Article</h1>
+        <p>How do you Create this type of project with the help of HTML,CSS, JAVASCRIPT.<br/>
+            Discription: This is the first website that you should build. Every engineer 
+            should have a portfolio website and should try to keep it updated. You need to 
+            know HTML, CSS, and JS to build this. Keep it clean and simple. You can host your portfolio website on GitHub Pages/Netlify. 
+        </p>
+        <li>To get started, you'll want to plan out the structure and layout of your website. This includes deciding on the pages you want to include, such as an About Me page, a Projects page, and a Contact page. You'll also want to choose a color scheme and typography that reflects your personal style and brand.</li>
+        <li>Once you have a plan in place, you can start coding your website using HTML to structure the content, CSS to style the layout and design, and JavaScript to add interactivity and functionality. You can find many online tutorials and resources to help you learn these programming languages if you're new to web development.</li>
+        <li>After you've built your website, you can host it on platforms like GitHub Pages or Netlify, which offer free hosting for static websites. This way, you can share your portfolio with others and showcase your skills to potential employers or clients.</li>
+    </div>
 
-
-
-
-
+    
+    <div id="Projects" class="tabcontent">
+        <h1>Projects</h1>
+        <p>I've made few projects based on full stack developer:</p>
+        <ol>
+            <li><a href="https://real-estae.onrender.com/">Real-Estate</a>
+                <h4>Technologies used:</h4>
+                <ul>
+                    <li>FullStack/MERN Stack</li>
+                </ul>
+            </li>
+            <li><a href="https://github.com/Poonam1216/E-commerce">E-Commerce</a>
+                <h4>Technologies used:</h4>
+                <ul>
+                    <li>FullStack/MERN Stack</li>
+                </ul>
+            </li>
+            <li><a href="https://github.com/Poonam1216/snapshot">SnapShot</a>
+                <h4>Technologies used:</h4>
+                  <ul>    
+                    <li>ReactJS</li>
+                    <li>NodeJs</li>
+                    <li>MongoDB</li>
+                    <li>JavaScript</li>
+                 </ul>
+            </li>
+            <li><a href="https://frontend-instaclone-9pb2.onrender.com">Insta-Clone</a>
+                <h4>Technologies used:</h4>
+                <ul>
+                    <li>FullStack/MERN Stack</li>
+                </ul>
+            </li>
+            <li><a href="https://github.com/Poonam1216/tic-tac-toe">Tic-Tac-Toe:</a> 
+                <h4>Technologies used:</h4>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li><br/>
+           
+            <li><a href=" https://vehicle-manufacturer.onrender.com">Vehicle Manufacturer</a> 
+                <h4>Technologies used:</h4>
+                <ul>
+                    <li>Nodejs</li>
+                    <li>Reactjs</li>
+                    <li>MongoDB</li>
+                </ul>
+            </li><br/>
+            <h5>And Few More....</h5>
+        </ol><br/><br/>
+    </div>
+    <div id="Contact" class="tabcontent">
+        <h1>Contact Me:</h1>
+        <p class="Contact">
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi-110064, India</p>
+            <div><i class="fa fa-envelope-o" aria-hidden="true"> </i> Email: Poonam.trifed@gmail.com</div></p>
+          </div>
+    </div>
+    
 
 
     <div class="footer">

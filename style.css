@@ -1,34 +1,45 @@
-*body{
+body{
     font-family: 'Nunito Sans';
     font-size: larger;
-    font-weight: 100;
+    background-color: white;
 }
 
 /**NAVBAR STYLE**/
-ul {
+.tab {
     list-style-type: none;
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
   }
   
-  li {
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: black;
+    color: white;
     float: right;
-
+    cursor: pointer;
+    margin: 10px;
+    padding: 14px 16px;
+    font-size: 17px;
   }
-  li a{
-    display: block;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(142, 138, 138);
   }
-  li a:hover {
-    background-color: #111;
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
   }
-
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
   /*IMAGE*/
   img{
     width: 100%;
@@ -39,13 +50,34 @@ ul {
     top: 50%;
     left: 50%;
     font-size: 50px;
+    text-align: center;
+    flex: auto;
     transform: translate(-20%, -100%);
+  }
+  /**PAGES ADD **/
+
+  .tablink {
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  .tabcontent {
+    float: left;
+    color: black;
+    display: none;
+    padding: 6px 12px;
+    height: 100%;
   }
 
 
 
 
-  
+
+
 
   /** FOOTER STYLE**/
 
