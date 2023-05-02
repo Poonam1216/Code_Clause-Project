@@ -11,6 +11,7 @@ body{
     padding: 10px;
     overflow: hidden;
     background-color: black;
+    flex-wrap: nowrap;
   }
   
   /* Style the buttons inside the tab */
@@ -22,6 +23,7 @@ body{
     margin: 10px;
     padding: 14px 16px;
     font-size: 17px;
+    flex-wrap: nowrap;
   }
   
   /* Change background color of buttons on hover */
@@ -44,16 +46,18 @@ body{
   img{
     width: 100%;
     height: 500px;
+    padding: auto;
   }
   .center {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
-    flex: auto;
     transform: translate(-20%, -100%);
+    flex-wrap: nowrap;
   }
+  
   /**PAGES ADD **/
 
   .tablink {
@@ -66,14 +70,18 @@ body{
   }
   
   .tabcontent {
-    float: left;
     color: black;
     display: none;
-    padding: 6px 12px;
+    padding: 0;
     height: 100%;
   }
 
 
+  .heading{
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
 
 
 
@@ -82,11 +90,49 @@ body{
   /** FOOTER STYLE**/
 
   .footer{
-    position: fixed;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
   text-align: center;
+  }
+
+  /***/
+
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: white;
+      font-size: small;
+    }
+    .center {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-size: 10px;
+        text-align: right;
+        transform: translate(-50%, -50%);
+        flex-wrap: nowrap;
+      }
+      img{
+        width: 100%;
+        height: 200px;
+        padding: auto;
+      }
+      .tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+        overflow: hidden;
+        flex-wrap: nowrap;
+      }
+      .tab button {
+        color: white;
+        float: right;
+        cursor: pointer;
+        margin: 10px;
+        font-size: small;
+        flex-wrap: nowrap;
+      }
   }
