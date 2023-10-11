@@ -74,8 +74,9 @@
 
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Current</span><br />Intern @CodeClause</li><br />
-                                <li><span> 2021 - Present </span><br />Procurement Executive @TRIFED</li><br />
+                                <li><span>June 2023 - Present</span><br>Software Developer @GaianSolutions</li>
+                                <li><span>2023</span><br />Intern @CodeClause</li><br />
+                                <li><span> June 2021 - June 2023</span><br />Procurement Executive @TRIFED</li><br />
                             </ul>
                         </div>
 
@@ -288,10 +289,10 @@
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                msg.innerHTML ="Message sent Succesfully"
-                setTimeout(function(){
+                msg.innerHTML = "Message sent Succesfully"
+                setTimeout(function () {
                     msg.innerHTML = ""
-                },5000)
+                }, 5000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
