@@ -13,13 +13,8 @@
 <body>
 
     <div id="header">
-        <!-- <div id="background_img">
-            <img src="images/backgroundimage.jpeg">
-<div class="center"><h1>Poonam Rani</h1> <h3>Full-Stack Developer</h3></div>
-        </div> -->
         <div class="conatainer">
-            <nav>
-                <img src="images/Logo PR.png" class="logo">
+            <nav class="navbar">
                 <ul>
                     <li><a href="#header" onclick="openPage(event, 'Home')">Home</a></li>
                     <li><a href="#about" onclick="openPage(event, 'About')">About</a></li>
@@ -30,7 +25,7 @@
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
-                <h1>Hi, I'm <span>Poonam</span> <br /> Rani from Delhi</h1>
+                <h1>Hi, I'm <span>Poonam Rani.</span> <br />  </h1>
             </div>
         </div>
     </div>
@@ -40,21 +35,16 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col1">
-                    <img src="images/My project-2 (1).jpg" alt="">
-                </div>
+            
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
                     <div id="Home">
-                        <p>A motivated Engineer who is good at problem solving and Programming, with an emphasis on
+                        <p>A motivated Software Developer who is good at problem solving and Programming, with an emphasis on
                             writing clean and maintainable code. Experienced with data structure, frontend/ backend and
-                            designing optimum solutions, aspiring to make a career in software engineering with a focus
+                            designing optimum solutions, aspiring to make a career in software Developer with a focus
                             on full stack development.</p><br />
 
-                        <p>I have extensive experience in programming in C, C++, Java, C#, Python, Javascript,
-                            Typescript,
-                            SQL, Html, Css, Bootstrap, Angular, React, Node.js, Express.js, MongoDB, Firebase, Git,
-                            Linux, Ubuntu, Mac OS, Git, Github</p>
+                        <p>I have an experience in MERN Stack and MEAN Stack</p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -64,9 +54,8 @@
 
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI/UX </span><br />Front End Developer</li><br />
-                                <li><span> Web Development</span><br />Full Stack Developer</li><br />
-                                <li><span>BackEnd</span><br />MERN stack</li><br />
+                                <li><span> Front End</span><br />Reactjs, Angular, HTML/CSS</li><br />
+                                <li><span>BackEnd</span><br />Nodejs, Express</li><br />
                                 <li><span> Database</span><br />MongoDB/SQL<br /><br />
                                 </li>
                             </ul>
@@ -96,92 +85,6 @@
         </div>
     </div>
 
-    <!-- -------------------Article----------------- -->
-
-    <div id="article">
-        <div class="container">
-            <h1 class="sub-title">My Articles</h1>
-            <div class="article-list">
-                <div>
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                    <h2>UI/UX</h2>
-                    <p>
-                    <ul>
-                        <li>To get started, you'll want to plan out the structure and layout of your website. This
-                            includes
-                            deciding on the pages you want to include, such as an About Me page, a Projects page, and a
-                            Contact page. You'll also want to choose a color scheme and typography that reflects your
-                            personal style and brand.</li>
-                        <li>Once you have a plan in place, you can start coding your website using HTML to structure the
-                            content, CSS to style the layout and design, and JavaScript to add interactivity and
-                            functionality. You can find many online tutorials and resources to help you learn these
-                            programming languages if you're new to web development.</li>
-                        <li>
-                            After you've built your website, you can host it on platforms like GitHub Pages or Netlify,
-                            which offer free hosting for static websites. This way, you can share your portfolio with
-                            others
-                            and showcase your skills to potential employers or clients.</li>
-                    </ul>
-
-                    </p>
-                </div>
-
-                <div>
-                    <i class="fa fa-crop" aria-hidden="true"></i>
-                    <h2>Web Development</h2>
-                    <p>
-                        <li>With '#Real_Estate_Catalog' users can register, log in, and add properties, search based on
-                            PPDID, update property and also users can delete their properties and log out securely. The
-                            project is equipped with advanced security measures, including bcrypt and JWT, which ensure
-                            the
-                            safety and confidentiality of user's data.</li>
-
-                        <li>Upon login, users are directed to their personalised dashboard, where they can view details
-                            of
-                            previously added #All_Properties, and inside the #My_Property user can view his own property
-                            and
-                            also can delete and update it. This project is made fully dynamically after 15 days the
-                            property
-                            status will be marked as sold . The PPDID search function enables users to find a specific
-                            property quickly, improving the efficiency and user experience.
-                        </li>
-                        <li>The use of JWT authentication and bcrypt password hashing ensures that the platform is
-                            secure and reliable for users. With JWT authentication, users are authenticated with a
-                            token, which
-                            is
-                            exchanged between the client and the server, allowing them to access restricted areas of the
-                            site. The bcrypt password hashing function, on the other hand, ensures that users passwords
-                            are
-                            stored in a hashed format, making it almost impossible for attackers to access the plaintext
-                            password.</li>
-
-                    </p>
-
-                </div>
-
-                <div>
-                    <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                    <h2>Back-End</h2>
-                    <p>
-                        <li>Vehicle manufacturer..
-
-                            Basically, this is project is based on Nodejs where i get the API and show the result on the
-                            Front end.
-
-                            There are 2 search bars.
-                            1 is for search by name and second is for search by specified vehicle type.
-
-                            I used search filter property to filter the data from the API.</li>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- -------------------Article----------------- -->
 
     <div id="project">
         <div class="container">
@@ -270,10 +173,8 @@
                                 aria-hidden="true"></i></a>
                         <a href="https://github.com/poonamtrifed"><i class="fa fa-github-square"
                                 aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/riyasingh064/"><i class="fa fa-instagram"
-                                aria-hidden="true"></i></a>
                     </div>
-                    <a href="images/Poonam's Resume.pdf" download class="btn btn2"><i class="fa fa-download"
+                    <a href="images/Poonam's Resume 2024.pdf" download class="btn btn2"><i class="fa fa-download"
                             aria-hidden="true"></i>Download Resume</a>
                 </div>
                 <div class="contact-right">

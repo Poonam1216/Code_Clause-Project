@@ -26,11 +26,11 @@ body {
   padding: 10px 10px;
 }
 
-nav {
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content:end;
+
 }
 
 .logo {
